@@ -66,4 +66,6 @@ public class PlayerPhysicals1 : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+    
+    
 }
