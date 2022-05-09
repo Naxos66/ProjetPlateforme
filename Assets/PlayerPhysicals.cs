@@ -8,7 +8,7 @@ public class PlayerPhysicals : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 8f;
-    public float gravity = -27f;
+    public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
     public Transform groundCheck;
@@ -50,16 +50,6 @@ public class PlayerPhysicals : MonoBehaviour
         else
         {
             speed = 8f;
-        }
-
-        if(Input.GetKey(KeyCode.LeftControl))
-        {
-            transform.localScale = new Vector3(1,0.6f,1);
-            speed = 4f;
-        }
-        else
-        {
-            transform.localScale = new Vector3(1,1,1);
         }
 
         velocity.y += gravity * Time.deltaTime;
