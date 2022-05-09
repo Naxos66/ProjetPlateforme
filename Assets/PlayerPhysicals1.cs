@@ -55,7 +55,10 @@ public class PlayerPhysicals1 : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftControl))
         {
             transform.localScale = new Vector3(1,0.6f,1);
+            if(isGrounded)
+            {
             speed = 4f;
+            }
         }
         else
         {
